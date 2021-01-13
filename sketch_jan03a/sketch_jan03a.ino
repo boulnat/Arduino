@@ -107,16 +107,59 @@ void setup()
  */
 void loop() 
 {
+  
   leds = 0xFE; // Initially turns all the LEDs off, by giving the variable 'leds' the value 0
   updateShiftRegister();
-  delay(1000);
-  //for (int i = 0; i < 8; i++) // Turn all the LEDs ON one by one.
-  //{
-  //bitSet(leds, 7);    // Set the bit that controls that LED in the variable 'leds'
+  delay(125);
   leds = 0xFD;
   updateShiftRegister();
-  delay(1000);
-  //}
+  delay(125);
+  leds = 0xFF;
+  updateShiftRegister();
+  delay(125);
+  leds = 0xFC;
+  updateShiftRegister();
+  delay(125);
+  
+  leds = 0xFF; // Initially turns all the LEDs off, by giving the variable 'leds' the value 0
+  updateShiftRegister();
+  delay(125);
+
+  leds = 0xFE;
+  updateShiftRegister();
+  delay(125);
+  leds = 0xFF; // Initially turns all the LEDs off, by giving the variable 'leds' the value 0
+  updateShiftRegister();
+  delay(125);
+
+  leds = 0xFE;
+  updateShiftRegister();
+  delay(125);
+  leds = 0xFD; // Initially turns all the LEDs off, by giving the variable 'leds' the value 0
+  updateShiftRegister();
+  delay(125);
+  leds = 0xFF;
+  updateShiftRegister();
+  delay(125);
+  leds = 0xFD;
+  updateShiftRegister();
+  delay(125);
+  
+  leds = 0xFE;
+  updateShiftRegister();
+  delay(125);
+  leds = 0xFF; // Initially turns all the LEDs off, by giving the variable 'leds' the value 0
+  updateShiftRegister();
+  delay(125);
+
+  leds = 0xFE;
+  updateShiftRegister();
+  delay(125);
+  leds = 0xFF; // Initially turns all the LEDs off, by giving the variable 'leds' the value 0
+  updateShiftRegister();
+  delay(125);
+  delay(250);
+
 }
 
 /*
